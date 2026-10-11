@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Reset With Ricki mark">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&amp;display=swap');
+      .r { font-family: Syne, system-ui, sans-serif; font-weight: 800; font-size: 64px; letter-spacing: -0.06em; fill: #F7F6F3; }
+    </style>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="#3E423D"/>
+  <circle cx="92" cy="28" r="10" fill="#BAC2B4"/>
+  <text class="r" x="22" y="78">R</text>
+  <path d="M22 92h76" stroke="#A89A8E" stroke-width="4" stroke-linecap="round"/>
+</svg>

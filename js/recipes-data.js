@@ -1,0 +1,195 @@
+window.RWR_RECIPES = {
+  intro:
+    "Salads don’t have to be boring. Mix and match raw vegetables, textures, herbs, and dressings to keep the 12-week reset feeling fresh.",
+  salads: [
+    {
+      id: "crunchy-mediterranean",
+      name: "Crunchy Mediterranean",
+      ingredients: ["Cucumber", "Red bell pepper", "Red onion", "Tomatoes", "Fresh parsley"],
+      pairs: "Lemon Herb or Greek-Style Dressing",
+      image: "../assets/food/salad-01.jpg",
+    },
+    {
+      id: "cucumber-scallion",
+      name: "Cucumber Scallion",
+      ingredients: ["Cucumber", "Scallions", "Red onion", "Fresh dill"],
+      pairs: "Lemon Dill Dressing",
+      image: "../assets/food/salad-02.jpg",
+    },
+    {
+      id: "asian-crunch",
+      name: "Asian Crunch",
+      ingredients: ["Shredded cabbage", "Cucumber", "Bell pepper", "Shredded carrots", "Scallions"],
+      pairs: "Sesame Ginger Dressing",
+      image: "../assets/food/salad-03.jpg",
+    },
+    {
+      id: "kale-crunch",
+      name: "Kale Crunch",
+      ingredients: ["Finely chopped kale", "Shredded cabbage", "Cucumber", "Red onion", "Scallions"],
+      pairs: "Dijon Lemon Dressing",
+      image: "../assets/food/salad-04.jpg",
+    },
+    {
+      id: "mushroom-spinach",
+      name: "Mushroom Spinach",
+      ingredients: ["Baby spinach", "Thinly sliced raw mushrooms", "Red onion", "Cucumber"],
+      pairs: "Balsamic Dijon Dressing",
+      image: "../assets/food/salad-05.jpg",
+    },
+    {
+      id: "pepper-crunch",
+      name: "Pepper Crunch",
+      ingredients: ["Red bell pepper", "Yellow bell pepper", "Cucumber", "Red onion", "Scallions"],
+      pairs: "Red Wine Oregano or Lemon Herb Dressing",
+      image: "../assets/food/salad-06.jpg",
+    },
+    {
+      id: "green-goddess",
+      name: "Green Goddess",
+      ingredients: ["Cucumber", "Kale", "Baby spinach", "Scallions", "Fresh parsley", "Fresh dill"],
+      pairs: "Lemon Dill or Lemon Parsley Dressing",
+      image: "../assets/food/salad-07.jpg",
+    },
+    {
+      id: "cabbage-slaw",
+      name: "Cabbage Slaw",
+      ingredients: [
+        "Shredded green cabbage",
+        "Shredded purple cabbage",
+        "Cucumber",
+        "Red bell pepper",
+        "Scallions",
+      ],
+      pairs: "Lime Cilantro or Sesame Ginger Dressing",
+      image: "../assets/food/salad-08.jpg",
+    },
+    {
+      id: "greek-crunch",
+      name: "Greek Crunch",
+      ingredients: ["Cucumber", "Bell pepper", "Red onion", "Tomatoes", "Chopped romaine"],
+      pairs: "Greek-Style Dressing",
+      image: "../assets/food/salad-09.jpg",
+    },
+    {
+      id: "mushroom-pepper",
+      name: "Mushroom Pepper",
+      ingredients: ["Thinly sliced raw mushrooms", "Bell peppers", "Baby spinach", "Red onion", "Scallions"],
+      pairs: "Balsamic Dijon Dressing",
+      image: "../assets/food/salad-10.jpg",
+    },
+    {
+      id: "super-crunch",
+      name: "Super Crunch",
+      ingredients: ["Baby bok choy", "Cucumber", "Shredded cabbage", "Bell peppers", "Radishes", "Scallions"],
+      pairs: "Dijon Lemon or Apple Cider Dijon Dressing",
+      image: "../assets/food/salad-11.jpg",
+    },
+    {
+      id: "israeli-chopped",
+      name: "Israeli-Style Chopped Salad",
+      ingredients: ["Cucumber", "Tomatoes", "Bell pepper", "Red onion", "Fresh parsley"],
+      pairs: "Classic Lemon Herb Dressing",
+      image: "../assets/food/salad-12.jpg",
+    },
+    {
+      id: "kale-cucumber",
+      name: "Kale & Cucumber",
+      ingredients: ["Finely chopped kale", "Cucumber", "Red bell pepper", "Scallions", "Red onion"],
+      pairs: "Dijon Lemon or Lemon Herb Dressing",
+      image: "../assets/food/salad-13.jpg",
+    },
+    {
+      id: "spinach-crunch",
+      name: "Spinach Crunch",
+      ingredients: ["Baby spinach", "Cucumber", "Bell peppers", "Shredded cabbage", "Red onion"],
+      pairs: "Balsamic Dijon or Red Wine Oregano Dressing",
+      image: "../assets/food/salad-14.jpg",
+    },
+    {
+      id: "purple-crunch",
+      name: "Purple Crunch",
+      ingredients: [
+        "Purple cabbage",
+        "Thinly sliced radishes (watermelon radish for color)",
+        "Cucumber",
+        "Red bell pepper",
+        "Red onion",
+        "Scallions",
+      ],
+      pairs: "Lime Cilantro or Apple Cider Dijon Dressing",
+      image: "../assets/food/salad-15.jpg",
+    },
+    {
+      id: "everything-green",
+      name: "Everything Green",
+      ingredients: [
+        "Cucumber",
+        "Green bell pepper",
+        "Scallions",
+        "Kale",
+        "Baby spinach",
+        "Fresh herbs of choice",
+      ],
+      pairs: "Lemon Herb, Lemon Dill, or Lemon Parsley Dressing",
+      image: "../assets/food/salad-16.jpg",
+    },
+  ],
+  dressingsNote:
+    "Each dressing contains no more than 1 teaspoon of olive oil per serving. For a larger salad, add a little water, lemon juice, or vinegar to increase volume without adding oil.",
+  dressings: [
+    {
+      name: "Classic Lemon Herb",
+      items: ["1 tsp olive oil", "1½ tbsp fresh lemon juice", "1–2 tsp water", "Garlic powder", "Dried oregano", "Salt + black pepper"],
+    },
+    {
+      name: "Dijon Lemon",
+      items: ["1 tsp olive oil", "1 tbsp fresh lemon juice", "1 tsp Dijon mustard", "1–2 tsp water", "Salt + black pepper"],
+    },
+    {
+      name: "Balsamic Dijon",
+      items: ["1 tsp olive oil", "1 tbsp balsamic vinegar", "1 tsp Dijon mustard", "1–2 tsp water", "Garlic powder", "Black pepper"],
+    },
+    {
+      name: "Red Wine Oregano",
+      items: ["1 tsp olive oil", "1½ tbsp red wine vinegar", "1–2 tsp water", "Dried oregano", "Garlic powder", "Salt + black pepper"],
+    },
+    {
+      name: "Apple Cider Dijon",
+      items: ["1 tsp olive oil", "1 tbsp apple cider vinegar", "1 tsp Dijon mustard", "1–2 tsp water", "Garlic powder", "Salt + black pepper"],
+    },
+    {
+      name: "Lemon Dill",
+      items: ["1 tsp olive oil", "1½ tbsp fresh lemon juice", "1 tbsp chopped fresh dill", "1–2 tsp water", "Garlic powder", "Salt + black pepper"],
+    },
+    {
+      name: "Lemon Parsley",
+      items: ["1 tsp olive oil", "1½ tbsp fresh lemon juice", "Chopped fresh parsley", "1–2 tsp water", "Garlic powder", "Salt + black pepper"],
+    },
+    {
+      name: "Sesame Ginger",
+      items: ["1 tsp olive oil", "1 tbsp rice vinegar", "1 tsp low-sodium soy sauce or tamari", "Fresh grated ginger", "1–2 tsp water", "Optional: sesame seeds"],
+    },
+    {
+      name: "Lime Cilantro",
+      items: ["1 tsp olive oil", "1½ tbsp fresh lime juice", "Chopped fresh cilantro", "1–2 tsp water", "Garlic powder", "Salt + black pepper"],
+    },
+    {
+      name: "Spicy Lime",
+      items: ["1 tsp olive oil", "1½ tbsp fresh lime juice", "1–2 tsp water", "Chili flakes or finely chopped jalapeño", "Garlic powder", "Salt"],
+    },
+    {
+      name: "Greek-Style",
+      items: ["1 tsp olive oil", "1 tbsp red wine vinegar", "1 tsp fresh lemon juice", "Dried oregano", "Garlic powder", "Salt + black pepper"],
+    },
+    {
+      name: "Creamy Dijon",
+      items: ["1 tsp olive oil", "1 tbsp 0% plain Greek yogurt", "1 tsp Dijon mustard", "1 tbsp fresh lemon juice", "Water to thin", "Salt + black pepper"],
+    },
+  ],
+  formula: {
+    title: "Easy Dressing Formula",
+    body: "Start with: 1 tsp olive oil + 1–1½ tbsp acid + herbs/seasonings + 1–2 tsp water. Use lemon, lime, balsamic, red wine vinegar, apple cider vinegar, or rice vinegar — then season to change the flavor.",
+    tip: "Make the salad big with veggies. Raw vegetables add crunch, fiber, color, and volume. A flavorful dressing and mixed textures can turn the same basics into a completely different salad.",
+  },
+};

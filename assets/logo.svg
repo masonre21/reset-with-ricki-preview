@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" role="img" aria-labelledby="title desc">
+  <title id="title">Reset With Ricki</title>
+  <desc id="desc">Wordmark logo for Reset With Ricki</desc>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&amp;family=Caveat:wght@600&amp;display=swap');
+      .reset { font-family: Syne, system-ui, sans-serif; font-weight: 800; font-size: 72px; letter-spacing: -0.04em; fill: #3E423D; }
+      .with { font-family: Syne, system-ui, sans-serif; font-weight: 800; font-size: 18px; letter-spacing: 0.28em; fill: #7A8478; }
+      .ricki { font-family: Caveat, cursive; font-weight: 600; font-size: 54px; fill: #A89A8E; }
+      .dot { fill: #BAC2B4; }
+    </style>
+  </defs>
+  <circle class="dot" cx="18" cy="38" r="8"/>
+  <text class="reset" x="36" y="58">RESET</text>
+  <text class="with" x="38" y="86">WITH</text>
+  <text class="ricki" x="118" y="98">Ricki</text>
+</svg>

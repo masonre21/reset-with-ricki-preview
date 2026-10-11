@@ -1,0 +1,785 @@
+/* Dramatically distinct logo directions — each .lv-N is its own visual world */
+
+.logo-preview .stage {
+  min-height: 180px;
+}
+
+/* 1 — Current stacked */
+.lv1 .reset {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+  color: #3e423d;
+  line-height: 1;
+}
+.lv1 .row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  margin-top: 0.2rem;
+}
+.lv1 .with {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.28em;
+  color: #7a8478;
+}
+.lv1 .name {
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+  color: #a89a8e;
+}
+.lv1 .dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: #bac2b4;
+  display: inline-block;
+  margin-right: 0.45rem;
+  vertical-align: middle;
+  transform: translateY(-0.55rem);
+}
+.stage.dark .lv1 .reset {
+  color: #f7f6f3;
+}
+.stage.dark .lv1 .with {
+  color: #bac2b4;
+}
+.stage.dark .lv1 .name {
+  color: #d2c6ba;
+}
+
+/* 2 — Swiss ultra-tracked all caps (no script) */
+.lv2 {
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: clamp(0.95rem, 2.2vw, 1.2rem);
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: #2d2a26;
+}
+.lv2 .thin {
+  font-weight: 300;
+  letter-spacing: 0.55em;
+  display: block;
+  margin: 0.55rem 0;
+  opacity: 0.55;
+  font-size: 0.72em;
+}
+.stage.dark .lv2 {
+  color: #f7f6f3;
+}
+
+/* 3 — Full handwriting brand */
+.lv3 {
+  font-family: "Gochi Hand", cursive;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  color: #4a4540;
+  text-align: center;
+  line-height: 1.15;
+  transform: rotate(-2deg);
+}
+.lv3 small {
+  display: block;
+  font-size: 0.45em;
+  letter-spacing: 0.08em;
+  margin-top: 0.35rem;
+  opacity: 0.7;
+}
+.stage.dark .lv3 {
+  color: #f0ebe4;
+}
+
+/* 4 — Condensed stamp / industrial */
+.lv4 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(2rem, 4.5vw, 2.8rem);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  line-height: 0.92;
+  color: #2d2a26;
+  text-align: left;
+  border: 4px solid #2d2a26;
+  padding: 0.75rem 0.9rem 0.65rem;
+}
+.lv4 span {
+  display: block;
+  font-size: 0.38em;
+  letter-spacing: 0.18em;
+  margin-top: 0.35rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+}
+.stage.dark .lv4 {
+  color: #f7f6f3;
+  border-color: #f7f6f3;
+}
+
+/* 5 — Botanical mark + delicate serif */
+.lv5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  text-align: center;
+}
+.lv5 .leaf {
+  width: 42px;
+  height: 42px;
+}
+.lv5 .word {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #3e423d;
+}
+.lv5 .sub {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #7a8478;
+  letter-spacing: 0.04em;
+}
+.stage.dark .lv5 .word {
+  color: #f7f6f3;
+}
+.stage.dark .lv5 .sub {
+  color: #bac2b4;
+}
+
+/* 6 — Tall vertical stack (poster) */
+.lv6 {
+  display: flex;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+.lv6 .spine {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #a89a8e;
+  border-right: 1px solid #cfc8bf;
+  padding-right: 0.75rem;
+}
+.lv6 .stack {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  line-height: 0.95;
+  color: #3e423d;
+}
+.lv6 .stack em {
+  font-style: italic;
+  font-weight: 400;
+  color: #7a8478;
+}
+.stage.dark .lv6 .spine {
+  color: #d2c6ba;
+  border-color: rgba(247, 246, 243, 0.25);
+}
+.stage.dark .lv6 .stack {
+  color: #f7f6f3;
+}
+.stage.dark .lv6 .stack em {
+  color: #bac2b4;
+}
+
+/* 7 — Vintage soap / oval label */
+.lv7 {
+  width: min(260px, 100%);
+  border: 2px solid #6f655c;
+  border-radius: 50% / 42%;
+  padding: 1.6rem 1.4rem;
+  text-align: center;
+  background: radial-gradient(ellipse at center, #faf7f2 0%, #efe8df 100%);
+  color: #4a4038;
+}
+.lv7 .top {
+  font-family: "Special Elite", monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+.lv7 .mid {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin: 0.35rem 0;
+  letter-spacing: 0.04em;
+}
+.lv7 .bot {
+  font-family: "Special Elite", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+}
+.stage.dark .lv7 {
+  background: radial-gradient(ellipse at center, #4a4540 0%, #2d2a26 100%);
+  border-color: #cfc6bb;
+  color: #f0ebe4;
+}
+
+/* 8 — Monoline outline */
+.lv8 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.7rem, 3.5vw, 2.3rem);
+  letter-spacing: 0.02em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #3e423d;
+  text-stroke: 1.5px #3e423d;
+  text-align: center;
+}
+.lv8 .fill {
+  -webkit-text-stroke: 0;
+  color: #a89a8e;
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+  font-size: 1.15em;
+}
+.stage.dark .lv8 {
+  -webkit-text-stroke: 1.5px #f7f6f3;
+}
+.stage.dark .lv8 .fill {
+  color: #d2c6ba;
+  -webkit-text-stroke: 0;
+}
+
+/* 9 — Geometric color blocks */
+.lv9 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.lv9 .blocks {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 48px;
+}
+.lv9 .blocks i {
+  display: block;
+}
+.lv9 .blocks i:nth-child(1) {
+  background: #3e423d;
+}
+.lv9 .blocks i:nth-child(2) {
+  background: #a89a8e;
+}
+.lv9 .blocks i:nth-child(3) {
+  background: #bac2b4;
+}
+.lv9 .copy {
+  background: #f0efec;
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.lv9 .copy strong {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.03em;
+  color: #2d2a26;
+}
+.lv9 .copy span {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8a847c;
+  margin-top: 0.2rem;
+}
+.stage.dark .lv9 .copy {
+  background: #2a2927;
+}
+.stage.dark .lv9 .copy strong {
+  color: #f7f6f3;
+}
+.stage.dark .lv9 .copy span {
+  color: #bac2b4;
+}
+
+/* 10 — Soft rounded lowercase app brand */
+.lv10 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3.2vw, 2.1rem);
+  color: #5c635c;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+.lv10 .bubble {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: #e8ebe6;
+  padding: 0.65rem 1.15rem;
+  border-radius: 999px;
+}
+.lv10 .bubble b {
+  color: #3e423d;
+}
+.lv10 .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #a89a8e;
+}
+.stage.dark .lv10 .bubble {
+  background: #4a4e48;
+  color: #e8ebe6;
+}
+.stage.dark .lv10 .bubble b {
+  color: #f7f6f3;
+}
+
+/* 11 — Stitch / embroidery */
+.lv11 {
+  text-align: center;
+  font-family: "Homemade Apple", cursive;
+  font-size: clamp(1.7rem, 3.5vw, 2.2rem);
+  color: #5a534c;
+  padding: 0.5rem 0.75rem;
+}
+.lv11 .box {
+  border: 2px dashed #b7aea4;
+  padding: 1.1rem 1.4rem;
+  display: inline-block;
+}
+.lv11 .sub {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #8a847c;
+  margin-top: 0.55rem;
+}
+.stage.dark .lv11 {
+  color: #e8e0d6;
+}
+.stage.dark .lv11 .box {
+  border-color: #8a847c;
+}
+.stage.dark .lv11 .sub {
+  color: #bac2b4;
+}
+
+/* 12 — Arch / farmers-market ribbon */
+.lv12 {
+  text-align: center;
+  width: min(280px, 100%);
+}
+.lv12 .arch {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #3e423d;
+  border: 2px solid #3e423d;
+  border-bottom: none;
+  border-radius: 999px 999px 0 0;
+  padding: 0.85rem 1.25rem 0.35rem;
+}
+.lv12 .ribbon {
+  background: #3e423d;
+  color: #f7f6f3;
+  font-family: "Caveat", cursive;
+  font-size: 1.8rem;
+  padding: 0.25rem 1rem 0.45rem;
+  margin-top: -1px;
+}
+.stage.dark .lv12 .arch {
+  color: #f7f6f3;
+  border-color: #f7f6f3;
+}
+.stage.dark .lv12 .ribbon {
+  background: #f7f6f3;
+  color: #3e423d;
+}
+
+/* ——— Illustration-led marks (13–22) ——— */
+.lv-illu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  text-align: center;
+}
+.lv-illu .mark {
+  width: 96px;
+  height: 96px;
+}
+.lv-illu .caption {
+  font-family: "Sora", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8a847c;
+}
+.stage.dark .lv-illu .caption {
+  color: #bac2b4;
+}
+.lv-illu.with-name .name {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: -0.03em;
+  color: #3e423d;
+}
+.stage.dark .lv-illu.with-name .name {
+  color: #f7f6f3;
+}
+
+.lv-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-align: left;
+}
+.lv-row .mark {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+}
+.lv-row .name {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: -0.03em;
+  color: #3e423d;
+}
+.lv-row .sub {
+  font-family: "Sora", sans-serif;
+  font-size: 0.78rem;
+  color: #8a847c;
+  margin-top: 0.15rem;
+}
+.stage.dark .lv-row .name {
+  color: #f7f6f3;
+}
+.stage.dark .lv-row .sub {
+  color: #bac2b4;
+}
+
+/* ——— Logos 23–32: varied fonts + palette-specific colorways ——— */
+
+.lv23 {
+  text-align: center;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  letter-spacing: 0.06em;
+  color: #3f3b34;
+}
+.lv23 span {
+  display: block;
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+  font-size: 0.85em;
+  letter-spacing: 0;
+  color: #d2c194;
+  margin-top: 0.15rem;
+}
+.lv23-stage-a { background: #f8f5ec !important; }
+.lv23-stage-b { background: #3f3b34 !important; }
+.lv23-stage-b .lv23 { color: #f8f5ec; }
+.lv23-stage-b .lv23 span { color: #e6dcc4; }
+
+.lv24 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.lv24 .orb {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #c5d6d4, #6d8588 55%, #334144);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.lv24 .orb svg { width: 34px; height: 34px; }
+.lv24 .word {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  color: #334144;
+}
+.lv24 .sub {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #6d8588;
+  margin-top: 0.2rem;
+}
+.lv24-stage-a { background: #f3f7f6 !important; }
+.lv24-stage-b { background: #334144 !important; }
+.lv24-stage-b .lv24 .word { color: #f3f7f6; }
+.lv24-stage-b .lv24 .sub { color: #c5d6d4; }
+
+.lv25 {
+  font-family: "Pacifico", cursive;
+  font-size: clamp(1.9rem, 3.8vw, 2.5rem);
+  color: #b79aa3;
+  text-align: center;
+  line-height: 1.2;
+}
+.lv25 small {
+  display: block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.35em;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #8a7d82;
+  margin-top: 0.45rem;
+}
+.lv25-stage-a { background: #f7f3f4 !important; }
+.lv25-stage-b { background: #3d3638 !important; }
+.lv25-stage-b .lv25 { color: #d9cfd2; }
+.lv25-stage-b .lv25 small { color: #b79aa3; }
+
+.lv26 {
+  border: 3px double #7d736a;
+  padding: 1rem 1.25rem;
+  text-align: center;
+  background: #f6f3f0;
+}
+.lv26 .top {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 0.7rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #7d736a;
+}
+.lv26 .mid {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.55rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #3a3531;
+  margin: 0.35rem 0;
+}
+.lv26 .bot {
+  font-family: "Caveat", cursive;
+  font-size: 1.3rem;
+  color: #b0a297;
+}
+.lv26-stage-a { background: #e3ddd4 !important; }
+.lv26-stage-b { background: #3a3531 !important; }
+.lv26-stage-b .lv26 { background: #2b2b2b; border-color: #b0a297; }
+.lv26-stage-b .lv26 .top { color: #b0a297; }
+.lv26-stage-b .lv26 .mid { color: #f6f3f0; }
+.lv26-stage-b .lv26 .bot { color: #d4cbc2; }
+
+.lv27 {
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+}
+.lv27 .hex {
+  width: 88px;
+  height: 88px;
+  clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
+  background: #6f856f;
+  display: grid;
+  place-items: center;
+}
+.lv27 .hex span {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.04em;
+  color: #f4f7f3;
+}
+.lv27 .label {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.14em;
+  color: #374239;
+}
+.lv27-stage-a { background: #f4f7f3 !important; }
+.lv27-stage-b { background: #374239 !important; }
+.lv27-stage-b .lv27 .hex { background: #9bb094; }
+.lv27-stage-b .lv27 .hex span { color: #374239; }
+.lv27-stage-b .lv27 .label { color: #d5e0d2; }
+
+.lv28 {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(1.7rem, 3.4vw, 2.2rem);
+  font-weight: 400;
+  color: #2b2b2b;
+  text-align: center;
+}
+.lv28 em {
+  font-style: italic;
+  color: #b8b0a4;
+}
+.lv28 .rule {
+  width: 48px;
+  height: 1px;
+  background: #7a7772;
+  margin: 0.55rem auto;
+}
+.lv28 small {
+  display: block;
+  font-family: "Sora", sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #7a7772;
+}
+.lv28-stage-a { background: #faf8f5 !important; }
+.lv28-stage-b { background: #2b2b2b !important; }
+.lv28-stage-b .lv28 { color: #faf8f5; }
+.lv28-stage-b .lv28 em { color: #e3ddd4; }
+.lv28-stage-b .lv28 .rule { background: #b8b0a4; }
+.lv28-stage-b .lv28 small { color: #b8b0a4; }
+
+.lv29 {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.lv29 .badge {
+  width: 70px;
+  height: 70px;
+  border-radius: 18px;
+  background: #c4a8a1;
+  display: grid;
+  place-items: center;
+  font-family: "Abril Fatface", Georgia, serif;
+  font-size: 2rem;
+  color: #f7f4f3;
+  flex-shrink: 0;
+}
+.lv29 .copy {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: #3d3938;
+  letter-spacing: -0.02em;
+}
+.lv29 .copy span {
+  display: block;
+  font-weight: 400;
+  font-size: 0.78rem;
+  color: #8a8280;
+  margin-top: 0.15rem;
+}
+.lv29-stage-a { background: #f7f4f3 !important; }
+.lv29-stage-b { background: #3d3938 !important; }
+.lv29-stage-b .lv29 .badge { background: #d8cfcb; color: #3d3938; }
+.lv29-stage-b .lv29 .copy { color: #f7f4f3; }
+.lv29-stage-b .lv29 .copy span { color: #c4a8a1; }
+
+.lv30 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+  color: #3c4034;
+}
+.lv30 .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #d2d0c4;
+  padding: 0.7rem 1.2rem;
+  border-radius: 999px;
+}
+.lv30 .chip b { color: #7d846c; font-weight: 700; }
+.lv30 .seed {
+  width: 14px;
+  height: 14px;
+  border-radius: 50% 50% 50% 0;
+  background: #7d846c;
+  transform: rotate(-45deg);
+}
+.lv30-stage-a { background: #f5f4ee !important; }
+.lv30-stage-b { background: #3c4034 !important; }
+.lv30-stage-b .lv30 .chip { background: #7d846c; color: #f5f4ee; }
+.lv30-stage-b .lv30 .chip b { color: #d2d0c4; }
+.lv30-stage-b .lv30 .seed { background: #d2d0c4; }
+
+.lv31 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+.lv31 .mark {
+  width: 80px;
+  height: 80px;
+}
+.lv31 .title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.55rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #3a4148;
+}
+.lv31 .sub {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #7a8691;
+}
+.lv31-stage-a { background: #f4f6f7 !important; }
+.lv31-stage-b { background: #3a4148 !important; }
+.lv31-stage-b .lv31 .title { color: #f4f6f7; }
+.lv31-stage-b .lv31 .sub { color: #c5ced6; }
+
+.lv32 {
+  text-align: center;
+}
+.lv32 .stack {
+  font-family: "Yeseva One", Georgia, serif;
+  font-size: clamp(1.6rem, 3.2vw, 2rem);
+  line-height: 1.05;
+  color: #3e423d;
+}
+.lv32 .stack span {
+  display: block;
+  font-family: "Karla", sans-serif;
+  font-weight: 500;
+  font-size: 0.55em;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #7a8478;
+  margin: 0.35rem 0;
+}
+.lv32 .accent {
+  display: inline-block;
+  margin-top: 0.35rem;
+  padding: 0.2rem 0.7rem;
+  background: #a89a8e;
+  color: #f7f6f3;
+  font-family: "Karla", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-radius: 999px;
+}
+.lv32-stage-a { background: #eef0eb !important; }
+.lv32-stage-b { background: #3e423d !important; }
+.lv32-stage-b .lv32 .stack { color: #f7f6f3; }
+.lv32-stage-b .lv32 .stack span { color: #bac2b4; }
+.lv32-stage-b .lv32 .accent { background: #bac2b4; color: #3e423d; }
